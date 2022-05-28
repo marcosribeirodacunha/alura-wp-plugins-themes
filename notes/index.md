@@ -1,9 +1,3 @@
-```
-Próxima aula: 
-  - 06. Internacionalização e desinstalação de um plugin
-    - 02. Criando arquivo de tradução
-```
-
 # Criando um plugin
 
 Para criar um plugin devemos criar uma pasta com o nome do plugin dentro do diretório `wp-content/plugins` e dentro desta pasta devemos criar um arquivo PHP com o mesmo nome da pasta do plugin.
