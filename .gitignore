@@ -1,48 +1,65 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
-
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
+### ignore all WordPress folders ###
+/wp-admin
+/wp-includes
+/wp-content/themes/*
+/wp-content/plugins/*
 /wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+/wp-content/uploads
+/wp-content/cache
+/wp-content/wflogs
+/wp-content/ai1wm-backups
+/wp-content/updraft
+/wp-content/mu-plugins
+/wp-content/*.php
+/wp-content/wp-rocket-config
+/wp-content/upgrade
+/wp-content/w3tc-config
+/wp-content/wpo-cache
+/wp-content/cimy-user-manager
+/wp-content/exports
+/wp-content/backups*
+/wp-content/gallery
+/wp-content/ngg
 
-# Configuration
-wp-config.php
+### ignore all files in root ###
+/*.*
 
-# Example themes
-/wp-content/themes/twenty*/
+### npm e composer ###
+node_modules
+.cache
+/vendor
+/wp-content/themes/alura/vendor/
+/wp-content/themes/alura/dist/
 
-# Example plugin
-/wp-content/plugins/hello.php
-
-# Uploads
-/wp-content/uploads/
-
-# Log files
+### ignore log files and databases ###
+.devilbox
+.phpintel
+.htaccess
+.DS_Store
 *.log
+*.sql
+*.sqlite
+*.zip
+*.tgz
+*.gz
+*.tar
+*.tar.gz
+**/.git
 
-# htaccess
-/.htaccess
-
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+### files to kee###
+!.gitignore
+!.github
+!README.md
+!composer.json
+!composer.lock
+!runWPbackup.php
+!/robots.txt
+!/.editorconfig
+!wp-content/languages/*
+# Theme
+!wp-content/themes/alura
+!wp-content/themes/alura-intercambios
+# Plugins
+!wp-content/plugins/al_local_dia_palestra
+!wp-content/plugins/al_patrocinadores_palestras
+!wp-content/plugins/al_temperatura_palestra
